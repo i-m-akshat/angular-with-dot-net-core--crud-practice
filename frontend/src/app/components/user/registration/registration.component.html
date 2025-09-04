@@ -1,0 +1,23 @@
+<div class="mb-4">
+    <h3 class="text-success mb-3">Sign Up</h3>
+</div>
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+    <div class="mb-3"><input type="text" class="form-control bg-body-secondary" placeholder="Full Name"
+            formControlName="fullName">
+    </div>
+    <div class="mb-3"><input type="text" class="form-control bg-body-secondary" placeholder="Email"
+            formControlName="email">
+    </div>
+    <div class="mb-3"><input type="password" class="form-control bg-body-secondary" placeholder="Password"
+            formControlName="password">
+    </div>
+    <div class="mb-3"><input type="password" class="form-control bg-body-secondary" placeholder="Confirm Password"
+            formControlName="confirmPassword">
+    </div>
+    <div class="mt-4">
+        <button class="btn btn-success w-100 rounded-3"
+            [disabled]="form.value.password != form.value.confirmPassword || form.invalid">
+            Register
+        </button>
+    </div>
+</form>

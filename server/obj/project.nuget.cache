@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "srV5QPGTGT0=",
+  "success": true,
+  "projectFilePath": "A:\\angular+dotnetcoreProjects\\loginusingjwtandidentity\\server\\server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aksha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0-preview.6.25358.103\\microsoft.aspnetcore.openapi.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\microsoft.openapi\\2.0.0-preview.29\\microsoft.openapi.2.0.0-preview.29.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.4\\swashbuckle.aspnetcore.9.0.4.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.4\\swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.4\\swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512",
+    "C:\\Users\\aksha\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.4\\swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
