@@ -2,21 +2,49 @@
     <h3 class="text-success mb-3">Sign Up</h3>
 </div>
 <form [formGroup]="form" (ngSubmit)="handleSubmit()">
-    <div class="mb-3"><input type="text" class="form-control bg-body-secondary" placeholder="Full Name"
-            formControlName="fullName">
+    <div class="mb-3">
+        <input type="text" class="form-control bg-body-secondary" placeholder="Full Name" formControlName="fullName" />
     </div>
-    <div class="mb-3"><input type="text" class="form-control bg-body-secondary" placeholder="Email"
-            formControlName="email">
+    @if(form.controls.fullName.hasError('required')&&hasDisplayableError('fullName')){
+    <div class="text-danger mb-2">Please enter the full name</div>
+    }
+
+    <div class="mb-3">
+        <input type="text" class="form-control bg-body-secondary" placeholder="Email" formControlName="email" />
     </div>
-    <div class="mb-3"><input type="password" class="form-control bg-body-secondary" placeholder="Password"
-            formControlName="password">
+    @if(form.controls.email.hasError('required')&&hasDisplayableError('email')){
+    <div class="text-danger mb-2">Please enter the email</div>
+    } @else if(form.controls.email.hasError('email')){
+    <div class="text-danger mb-2">Please enter the correct email</div>
+    }
+    <div class="mb-3">
+        <input type="password" class="form-control bg-body-secondary" placeholder="Password"
+            formControlName="password" />
     </div>
-    <div class="mb-3"><input type="password" class="form-control bg-body-secondary" placeholder="Confirm Password"
-            formControlName="confirmPassword">
+
+    @if (hasDisplayableError('password')) { @switch(form.controls.password.errors |
+    firstKey) {
+    @case ('required') {
+    <div class="text-danger mb-2">Please enter the password</div>
+    } @case ('minlength') {
+    <div class="text-danger mb-2">Password should be of minimum length of 6</div>
+    } @case ('pattern') {
+    <div class="text-danger mb-2">One or more special character</div>
+    } } }
+
+    <div class="mb-3">
+        <input type="password" class="form-control bg-body-secondary" placeholder="Confirm Password"
+            formControlName="confirmPassword" />
     </div>
+    @if(form.controls.confirmPassword.hasError('passwordMismatch')){
+    <div class="text-danger mb-2">
+        Password doesn't match
+    </div>
+    }
     <div class="mt-4">
-        <button class="btn btn-success w-100 rounded-3"
-            [disabled]="form.value.password != form.value.confirmPassword || form.invalid">
+        <button class="btn btn-success w-100 rounded-3" [disabled]="
+        form.value.password != form.value.confirmPassword || form.invalid
+      ">
             Register
         </button>
     </div>
