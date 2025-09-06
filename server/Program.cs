@@ -1,70 +1,66 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using server.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using server.Extensions;
 
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+
 var builder = WebApplication.CreateBuilder(args);
-string conString = builder.Configuration.GetConnectionString("DevDB");
+
 //builder.Services.AddOpenApi();
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-//services from identity core
-builder.Services.AddIdentityApiEndpoints<AppUser>().AddEntityFrameworkStores<AppDbContext>();
 
-builder.Services.Configure<IdentityOptions>(options =>
+
+builder.Services
+    .AddSwaggerExplorer()
+    .InjectDbContext(builder.Configuration)
+    .AddIdentityHandlerAndStores()
+    .ConfigureIdentityOptions()
+    .AddIdentityAuth(builder.Configuration)
+    .AddCORS()
+    ;
+
+
+
+#region Config.Authorization
+builder.Services.AddAuthorization(options =>
 {
-    options.Password.RequireDigit = false;
-    options.Password.RequireLowercase = false;
-    options.Password.RequireUppercase = false;
-    options.User.RequireUniqueEmail = true;
+    options.AddPolicy("AdminOnly", policy =>
+    {
+        policy.RequireRole("Admin");
+    });
+    options.AddPolicy("Common", policy =>
+    {
+        policy.RequireRole("");
+    });
 });
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(conString));
-
-//CORS Policy
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:4200")
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
-                      });
-});//this is much more flexible than app.useCors
-
+#endregion
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-    //app.MapOpenApi();
-}
+app.ConfigureSwaggerExplorer()
+    .ConfigureCORS()
+    .AddIdentityAuthMiddlewares();
 
-app.UseAuthentication();
-app.UseAuthorization();
-app.UseCors(MyAllowSpecificOrigins);
-//app.UseCors(options =>
-//{
-//    options.WithOrigins("http://localhost:4200/");
-//});////you can use this one or you can use builder one
+
 app.MapGroup("/Account")
     .MapIdentityApi<AppUser>();
-app.MapPost("/Account/signup",async(
-    UserManager<AppUser> userManager,[FromBody]UserRegistrationModel registrationModel
+app.MapPost("/Account/signup", async (
+    UserManager<AppUser> userManager, [FromBody] UserRegistrationModel registrationModel
     ) =>
 {
     AppUser user = new AppUser()
     {
-        Email=registrationModel.Email,
-        FullName=registrationModel.FullName,
-      UserName=registrationModel.Email,
+        Email = registrationModel.Email,
+        FullName = registrationModel.FullName,
+        UserName = registrationModel.Email,
     };
-    var res=await userManager.CreateAsync(user, registrationModel.Password);
+    var res = await userManager.CreateAsync(user, registrationModel.Password);
 
     if (res.Succeeded)
     {
@@ -74,6 +70,37 @@ app.MapPost("/Account/signup",async(
     {
         return Results.BadRequest(res);
     }
+});
+
+app.MapPost("/Account/signin", async (UserManager<AppUser> _userService, [FromBody] UserLoginModel loginModel) =>
+{
+    var res = await _userService.FindByEmailAsync(loginModel.email);
+    if (res != null && await _userService.CheckPasswordAsync(res, loginModel.password))
+    {
+        var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["AppSetting:JWTSecretKey"]!));
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(new Claim[]//claim array
+            {
+                new Claim("UserID",res.Id.ToString())//a particular claim with type and value
+            }),//payload
+            Expires = DateTime.UtcNow.AddMinutes(10),
+            SigningCredentials = new SigningCredentials
+            (
+                signInKey,
+                SecurityAlgorithms.HmacSha256Signature
+            )//header and sign 
+        };
+        var tokenHandler = new JwtSecurityTokenHandler();//token handler 
+        var securityToken = tokenHandler.CreateToken(tokenDescriptor);//creating token/
+        var token = tokenHandler.WriteToken(securityToken);//serializing token
+        return Results.Ok(new { token });
+    }
+    else
+    {
+        return Results.BadRequest(new { message = "username or password is incorrect" });
+    }
+
 });
 app.UseHttpsRedirection();
 
@@ -88,4 +115,10 @@ public class UserRegistrationModel
     public string Password { get; set; }
     public string FullName { get; set; }
 
+}
+
+public class UserLoginModel
+{
+    public string email { get; set; }
+    public string password { get; set; }
 }

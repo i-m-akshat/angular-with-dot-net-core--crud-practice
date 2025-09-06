@@ -172,3 +172,4 @@ A:\angular+dotnetcoreProjects\loginusingjwtandidentity\server\obj\Debug\net9.0\r
 A:\angular+dotnetcoreProjects\loginusingjwtandidentity\server\obj\Debug\net9.0\server.pdb
 A:\angular+dotnetcoreProjects\loginusingjwtandidentity\server\obj\Debug\net9.0\server.genruntimeconfig.cache
 A:\angular+dotnetcoreProjects\loginusingjwtandidentity\server\obj\Debug\net9.0\ref\server.dll
+A:\angular+dotnetcoreProjects\loginusingjwtandidentity\server\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

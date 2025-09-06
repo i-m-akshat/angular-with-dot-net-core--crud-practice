@@ -371,6 +371,28 @@
         }
       }
     },
+    "/Account/signin": {
+      "post": {
+        "tags": [
+          "server"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginModel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/User": {
       "get": {
         "tags": [
@@ -644,6 +666,20 @@
           },
           "isMachineRemembered": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserLoginModel": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

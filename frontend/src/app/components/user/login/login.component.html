@@ -1,1 +1,42 @@
-<p>login works!</p>
+<div class="mb-4">
+    <h3 class="text-success mb-3">Sign In</h3>
+    <div class="">Not a registered user?
+        <a routerLink="/user/sign-up" class="text-decoration-none fw-medium text-success d-inline-block">Sign Up</a>
+    </div>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="handleLogin()">
+
+    <div class="mb-3">
+        <input type="email" class="form-control bg-body-secondary" placeholder="email" formControlName="email" />
+    </div>
+    @if(hasDisplayableError(this.form.controls.email)){
+    @if(form.controls.email.hasError('required')){
+    <div class="text-danger fw-small">
+        Email is required
+    </div>
+    }@else if(form.controls.email.hasError('email')){
+    <div class="text-danger fw-small">
+        Please enter the correct email id
+    </div>
+    }
+    }
+
+    <div class="mb-3">
+        <input type="password" class="form-control bg-body-secondary" placeholder="password"
+            formControlName="password" />
+    </div>
+    @if(hasDisplayableError(this.form.controls.password)){
+
+    @if(form.controls.password.hasError('required')){
+    <div class="text-danger fw-small">Please enter the password</div>
+    }
+    }
+    <div class="mt-4">
+        <button class="btn btn-success w-100 rounded-3" [disabled]="
+         form.invalid
+      ">
+            Login
+        </button>
+    </div>
+</form>

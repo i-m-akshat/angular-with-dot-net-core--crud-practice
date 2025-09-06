@@ -1,7 +1,19 @@
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="col-12 col-md-7 col-lg-5">
-        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5">
-            <app-registration></app-registration>
+        <div class="row d-flex flex-row justify-content-center align-items-stretch g-0 shadow-lg rounded-4">
+            <div class="col-md-5 d-none d-md-flex">
+                <div class="card border-0 rounded-start-4 p-4 p-md-5 flex-grow-1 bg-secondary-subtle">
+                    <div class="text-center text-success">
+                        <img class="mb-3 w-100" src="img/download.png" alt="Auth EC logo">
+                        <h5 class="fw-bolder mb-0 mt-5">Auth EC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <div class="card border-0 rounded-end-4 p-4 p-md-5" [@routerFadeIn]="getRouteUrl()">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
         </div>
     </div>
 </div>
