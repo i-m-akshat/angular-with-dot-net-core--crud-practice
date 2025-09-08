@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
@@ -9,13 +9,14 @@ import {
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../shared/services/auth.service';
 import { ToastrService } from 'ngx-toastr';
+import { TOKEN_KEY } from '../../../shared/constants';
 @Component({
   selector: 'app-login',
   imports: [CommonModule, ReactiveFormsModule, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   form;
   isSubmitted: boolean = false;
   constructor(
@@ -29,6 +30,14 @@ export class LoginComponent {
       password: ['', Validators.required],
     });
   }
+  ngOnInit(): void {
+    this.authService.getLoginStatus().subscribe((x) => {
+      if (x) {
+        console.log(x);
+        this.router.navigate(['/dashboard']);
+      }
+    });
+  }
   hasDisplayableError = (control: FormControl): Boolean => {
     return (
       Boolean(control?.invalid) &&
@@ -40,8 +49,7 @@ export class LoginComponent {
     if (this.form.valid) {
       this.authService.signInUser(this.form.value).subscribe({
         next: (res: any) => {
-          console.log(res);
-          localStorage.setItem('jwt', res.token);
+          this.authService.saveToken(res.token);
           this.router.navigate(['dashboard']);
           this.toastr.success('Logged in successfully', 'Login Successfull!', {
             closeButton: true,

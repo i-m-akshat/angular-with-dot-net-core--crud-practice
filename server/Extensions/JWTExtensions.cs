@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -15,16 +16,23 @@ namespace server.Extensions
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;//default scheme
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;//scheme to how to handle unauthenticated request
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;//default scheme 
+               
             }).AddJwtBearer(config =>
             {
-                config.SaveToken = false;//where the token should be stored post successfull authentication
-                config.TokenValidationParameters = new TokenValidationParameters
+                config.SaveToken = false;//whether the token should be stored post successfull authentication
+                config.TokenValidationParameters = new TokenValidationParameters //token validation parameters
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["AppSetting:JWTSecretKey"]!)),
-                    ValidateActor = false,
-                    ValidateIssuer = false
+                    ValidateIssuer = false,
+                    ValidateAudience=false,
                 };
+            });
+
+            _services.AddAuthorization(options =>
+            {
+               
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme).RequireAuthenticatedUser().Build();
             });
             return _services;
         }

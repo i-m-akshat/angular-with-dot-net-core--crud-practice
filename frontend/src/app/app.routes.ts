@@ -3,6 +3,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
 import { UserComponent } from './components/user/user/user.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { authUserGuard } from './auth-user.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/user/login', pathMatch: 'full' },
@@ -14,5 +15,9 @@ export const routes: Routes = [
       { path: 'login', component: LoginComponent },
     ],
   },
-  { path: 'dashboard', component: DashboardComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [authUserGuard],
+  },
 ];

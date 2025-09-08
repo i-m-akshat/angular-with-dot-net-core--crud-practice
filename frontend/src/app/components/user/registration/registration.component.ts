@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormBuilder,
@@ -9,7 +9,7 @@ import {
 import { AuthService } from '../../../shared/services/auth.service';
 import { FirstKeyPipe } from '../../../shared/pipes/first-key.pipe';
 import { ToastrService } from 'ngx-toastr';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-registration',
@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css',
 })
-export class RegistrationComponent {
+export class RegistrationComponent implements OnInit {
   form;
   isSubmitted: boolean = false;
 
@@ -26,7 +26,9 @@ export class RegistrationComponent {
   constructor(
     public formBuilder: FormBuilder,
     private service: AuthService,
-    private toaster: ToastrService
+    private toaster: ToastrService,
+    private authService: AuthService,
+    private router: Router
   ) {
     this.form = this.formBuilder.group(
       {
@@ -56,7 +58,13 @@ export class RegistrationComponent {
       { validators: this.passwordMatchValidator }
     );
   }
-
+  ngOnInit(): void {
+    this.authService.getLoginStatus().subscribe((x) => {
+      if (x) {
+        this.router.navigate(['/dashboard']);
+      }
+    });
+  }
   //has displayable error
   hasDisplayableError = (controlName: string): Boolean => {
     const control = this.form.get(controlName);

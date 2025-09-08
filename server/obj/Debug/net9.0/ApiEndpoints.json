@@ -302,8 +302,8 @@
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__7",
+    "ContainingType": "IdentityUserEndPoints",
+    "Method": "SignInUser",
     "RelativePath": "Account/signin",
     "HttpMethod": "POST",
     "IsController": false,
@@ -311,7 +311,7 @@
     "Parameters": [
       {
         "Name": "loginModel",
-        "Type": "UserLoginModel",
+        "Type": "IdentityUserEndPoints\u002BUserLoginModel",
         "IsRequired": true
       }
     ],
@@ -324,8 +324,8 @@
     ]
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
+    "ContainingType": "IdentityUserEndPoints",
+    "Method": "CreateUser",
     "RelativePath": "Account/signup",
     "HttpMethod": "POST",
     "IsController": false,
@@ -333,7 +333,7 @@
     "Parameters": [
       {
         "Name": "registrationModel",
-        "Type": "UserRegistrationModel",
+        "Type": "IdentityUserEndPoints\u002BUserRegistrationModel",
         "IsRequired": true
       }
     ],
@@ -354,5 +354,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "server.Controllers.AccountEndpoints",
+    "Method": "GetUserProfile",
+    "RelativePath": "UserProfile",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
