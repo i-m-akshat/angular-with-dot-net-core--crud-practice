@@ -5,3 +5,14 @@
 <h3 class="text-center mt-5">
     Hi {{fullName}}
 </h3>
+
+<div class="row d-flex justify-content-center align-items-center">
+
+    <a [routerLink]="'/adminOnly'" role="button" class="btn btn-sm btn-success"
+        [appHideIfClaimsNotMet]="claimReq.adminOnly">
+        Admin Only
+    </a>
+    <a [routerLink]="'/adminOrTeacher'" role="button" class="btn btn-sm btn-success">
+        Admin Or Teacher
+    </a>
+</div>

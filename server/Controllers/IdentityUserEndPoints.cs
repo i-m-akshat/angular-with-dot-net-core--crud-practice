@@ -17,6 +17,10 @@ public static class IdentityUserEndPoints
         public string Email { get; set; }
         public string Password { get; set; }
         public string FullName { get; set; }
+        public string Role { get; set; }
+        public string Gender { get; set; }
+        public int Age { get; set; }
+        public int? LibraryID { get; set; }
 
     }
 
@@ -45,8 +49,12 @@ public static class IdentityUserEndPoints
             Email = registrationModel.Email,
             FullName = registrationModel.FullName,
             UserName = registrationModel.Email,
+            Gender = registrationModel.Gender,
+            DOB = DateOnly.FromDateTime(DateTime.Now.AddYears(-registrationModel.Age)),
+            LibraryID= registrationModel.LibraryID,
         };
         var res = await userManager.CreateAsync(user, registrationModel.Password);
+        await userManager.AddToRoleAsync(user,registrationModel.Role);
 
         if (res.Succeeded)
         {
@@ -72,13 +80,24 @@ public static class IdentityUserEndPoints
              6. here we will generate the token using instance of token handler class  using method CreateToken() and passing the token descriptor
              7.  
              */
+
+            var roles =await _userService.GetRolesAsync(res);
+
             var signInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.JWTSecretKey));
+            ClaimsIdentity claims = new ClaimsIdentity(new Claim[]
+            {
+                new Claim("UserID",res.Id.ToString()),
+                new Claim("Gender",res.Gender.ToString()),
+                new Claim("Age",(DateTime.Now.Year-res.DOB.Year).ToString()),
+                new Claim(ClaimTypes.Role,roles.First())
+            });
+            if (res.LibraryID != null)
+            {
+                claims.AddClaim(new Claim("LibraryID", res.LibraryID.ToString()!));
+            }
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]//claim array
-                {
-                new Claim("UserID",res.Id.ToString())//a particular claim with type and value
-                }),//payload
+                Subject = claims,//payload
                 Expires = DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials = new SigningCredentials
                 (

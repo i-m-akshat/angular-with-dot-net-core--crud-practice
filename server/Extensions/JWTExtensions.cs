@@ -33,6 +33,18 @@ namespace server.Extensions
             {
                
                 options.FallbackPolicy = new AuthorizationPolicyBuilder().AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme).RequireAuthenticatedUser().Build();
+               
+                    options.AddPolicy("AdminOnly", policy =>
+                    {
+                        policy.RequireRole("Admin");
+                    });
+                    options.AddPolicy("Common", policy =>
+                    {
+                        policy.RequireRole("");
+                    });
+                options.AddPolicy("HasLibraryId", policy => policy.RequireClaim("LibraryID"));//created a policy 
+
+
             });
             return _services;
         }

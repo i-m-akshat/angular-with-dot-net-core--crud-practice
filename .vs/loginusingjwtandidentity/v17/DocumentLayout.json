@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\authorizationdemoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\authorizationdemoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\identityuserendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\identityuserendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\appsettingsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\appsettingsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\jwtextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\jwtextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\identityuserendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\identityuserendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,16 +51,24 @@
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\models\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\models\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\appsettingsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\appsettingsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\corsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\extensions\\efcoreextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\migrations\\20250906101124_fullname in user identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,6 +77,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\migrations\\20250906100810_fullname added in user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\migrations\\20250906100810_fullname added in user table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\migrations\\20250909164451_updateddob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\migrations\\20250909164451_updateddob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|a:\\angular\u002Bdotnetcoreprojects\\loginusingjwtandidentity\\server\\migrations\\20250909163709_updateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|server\\server.csproj|solutionrelative:server\\migrations\\20250909163709_updateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,98 +106,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IdentityUserEndPoints.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\IdentityUserEndPoints.cs",
-              "RelativeDocumentMoniker": "server\\Controllers\\IdentityUserEndPoints.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\IdentityUserEndPoints.cs",
-              "RelativeToolTip": "server\\Controllers\\IdentityUserEndPoints.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAF8AAAAzAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "AppSetting.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppSetting.cs",
+              "RelativeDocumentMoniker": "server\\Models\\AppSetting.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppSetting.cs",
+              "RelativeToolTip": "server\\Models\\AppSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T17:25:03.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T04:27:09.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JWTExtensions.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\JWTExtensions.cs",
-              "RelativeDocumentMoniker": "server\\Extensions\\JWTExtensions.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\JWTExtensions.cs",
-              "RelativeToolTip": "server\\Extensions\\JWTExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T21:52:13.847Z",
-              "EditorCaption": ""
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\appsettings.json",
+              "RelativeDocumentMoniker": "server\\appsettings.json",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\appsettings.json",
+              "RelativeToolTip": "server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-05T18:15:28.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EFCoreExtensions.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\EFCoreExtensions.cs",
-              "RelativeDocumentMoniker": "server\\Extensions\\EFCoreExtensions.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\EFCoreExtensions.cs",
-              "RelativeToolTip": "server\\Extensions\\EFCoreExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABdAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "server\\Models\\AppDbContext.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "server\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T21:48:02.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T10:09:47.443Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Program.cs",
-              "RelativeDocumentMoniker": "server\\Program.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Program.cs",
-              "RelativeToolTip": "server\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T18:15:25.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IdentityExtensions.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\IdentityExtensions.cs",
-              "RelativeDocumentMoniker": "server\\Extensions\\IdentityExtensions.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\IdentityExtensions.cs",
-              "RelativeToolTip": "server\\Extensions\\IdentityExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T21:40:38.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CORSExtensions.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\CORSExtensions.cs",
-              "RelativeDocumentMoniker": "server\\Extensions\\CORSExtensions.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\CORSExtensions.cs",
-              "RelativeToolTip": "server\\Extensions\\CORSExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T22:00:26.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppSettingsExtension.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\AppSettingsExtension.cs",
-              "RelativeDocumentMoniker": "server\\Extensions\\AppSettingsExtension.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\AppSettingsExtension.cs",
-              "RelativeToolTip": "server\\Extensions\\AppSettingsExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:01:06.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "server\\Controllers\\UserController.cs",
@@ -190,46 +155,133 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Program.cs",
+              "RelativeDocumentMoniker": "server\\Program.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Program.cs",
+              "RelativeToolTip": "server\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T18:15:25.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AccountEndpoints.cs",
               "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\AccountEndpoints.cs",
               "RelativeDocumentMoniker": "server\\Controllers\\AccountEndpoints.cs",
               "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\AccountEndpoints.cs",
               "RelativeToolTip": "server\\Controllers\\AccountEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T15:40:09.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "server\\Models\\AppDbContext.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "server\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IdentityUserEndPoints.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\IdentityUserEndPoints.cs",
+              "RelativeDocumentMoniker": "server\\Controllers\\IdentityUserEndPoints.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\IdentityUserEndPoints.cs",
+              "RelativeToolTip": "server\\Controllers\\IdentityUserEndPoints.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAFYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T10:09:47.443Z",
+              "WhenOpened": "2025-09-07T17:25:03.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\appsettings.json",
-              "RelativeDocumentMoniker": "server\\appsettings.json",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\appsettings.json",
-              "RelativeToolTip": "server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-05T18:15:28.752Z",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationDemoEndPoints.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\AuthorizationDemoEndPoints.cs",
+              "RelativeDocumentMoniker": "server\\Controllers\\AuthorizationDemoEndPoints.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Controllers\\AuthorizationDemoEndPoints.cs",
+              "RelativeToolTip": "server\\Controllers\\AuthorizationDemoEndPoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T01:02:53.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "JWTExtensions.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\JWTExtensions.cs",
+              "RelativeDocumentMoniker": "server\\Extensions\\JWTExtensions.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\JWTExtensions.cs",
+              "RelativeToolTip": "server\\Extensions\\JWTExtensions.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:52:13.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "server.http",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\server.http",
+              "RelativeDocumentMoniker": "server\\server.http",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\server.http",
+              "RelativeToolTip": "server\\server.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-06T10:11:30.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IdentityExtensions.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\IdentityExtensions.cs",
+              "RelativeDocumentMoniker": "server\\Extensions\\IdentityExtensions.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\IdentityExtensions.cs",
+              "RelativeToolTip": "server\\Extensions\\IdentityExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:40:38.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "server\\Models\\AppUser.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppUser.cs",
+              "RelativeToolTip": "server\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T19:16:40.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250909163709_updatedUser.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250909163709_updatedUser.cs",
+              "RelativeDocumentMoniker": "server\\Migrations\\20250909163709_updatedUser.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250909163709_updatedUser.cs",
+              "RelativeToolTip": "server\\Migrations\\20250909163709_updatedUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T16:37:09.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250909164451_updatedDOB.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250909164451_updatedDOB.cs",
+              "RelativeDocumentMoniker": "server\\Migrations\\20250909164451_updatedDOB.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250909164451_updatedDOB.cs",
+              "RelativeToolTip": "server\\Migrations\\20250909164451_updatedDOB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T16:44:51.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SwaggerExtensions.cs",
               "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\SwaggerExtensions.cs",
               "RelativeDocumentMoniker": "server\\Extensions\\SwaggerExtensions.cs",
@@ -237,25 +289,59 @@
               "RelativeToolTip": "server\\Extensions\\SwaggerExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T21:55:35.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T21:55:35.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AppSetting.cs",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppSetting.cs",
-              "RelativeDocumentMoniker": "server\\Models\\AppSetting.cs",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Models\\AppSetting.cs",
-              "RelativeToolTip": "server\\Models\\AppSetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "server\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "server\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T04:27:09.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T19:17:23.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppSettingsExtension.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\AppSettingsExtension.cs",
+              "RelativeDocumentMoniker": "server\\Extensions\\AppSettingsExtension.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\AppSettingsExtension.cs",
+              "RelativeToolTip": "server\\Extensions\\AppSettingsExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T14:01:06.693Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "CORSExtensions.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\CORSExtensions.cs",
+              "RelativeDocumentMoniker": "server\\Extensions\\CORSExtensions.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\CORSExtensions.cs",
+              "RelativeToolTip": "server\\Extensions\\CORSExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T22:00:26.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EFCoreExtensions.cs",
+              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\EFCoreExtensions.cs",
+              "RelativeDocumentMoniker": "server\\Extensions\\EFCoreExtensions.cs",
+              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Extensions\\EFCoreExtensions.cs",
+              "RelativeToolTip": "server\\Extensions\\EFCoreExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:48:02.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "20250906100810_fullName Added in user table.cs",
               "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250906100810_fullName Added in user table.cs",
               "RelativeDocumentMoniker": "server\\Migrations\\20250906100810_fullName Added in user table.cs",
@@ -267,19 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "server.http",
-              "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\server.http",
-              "RelativeDocumentMoniker": "server\\server.http",
-              "ToolTip": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\server.http",
-              "RelativeToolTip": "server\\server.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-09-06T10:11:30.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "20250906101124_FullName in user identity.cs",
               "DocumentMoniker": "A:\\angular\u002BdotnetcoreProjects\\loginusingjwtandidentity\\server\\Migrations\\20250906101124_FullName in user identity.cs",
               "RelativeDocumentMoniker": "server\\Migrations\\20250906101124_FullName in user identity.cs",

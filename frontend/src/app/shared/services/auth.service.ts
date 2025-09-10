@@ -21,6 +21,9 @@ export class AuthService {
   // ... rest of the code is the same
 
   createUser = (formData: any) => {
+    formData.Gender = 'female';
+    formData.role = 'Teacher';
+
     return this.httpClient.post(this.baseUrl + '/signup', formData);
   };
 
@@ -53,5 +56,10 @@ export class AuthService {
   }
   getLoginStatus_synchronous() {
     return this.isLoggedIn;
+  }
+
+  getClaims() {
+    const payload = JSON.parse(window.atob(this.getToken()?.split('.')[1]!));
+    return payload;
   }
 }

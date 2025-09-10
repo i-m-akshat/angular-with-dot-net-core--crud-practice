@@ -29,19 +29,7 @@ builder.Services
 //builder.Services.Configure<AppSetting>(builder.Configuration.GetSection("AppSetting"));//here an instance of the appsetting class will be created and containing properties will be assigned with the value with the corresponding key value pair from appsetting section 
 
 
-#region Config.Authorization
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("AdminOnly", policy =>
-    {
-        policy.RequireRole("Admin");
-    });
-    options.AddPolicy("Common", policy =>
-    {
-        policy.RequireRole("");
-    });
-});
-#endregion
+
 
 var app = builder.Build();
 
@@ -53,6 +41,7 @@ app.ConfigureSwaggerExplorer()
 app.MapGroup("/Account")
     .MapIdentityApi<AppUser>();
 app.MapGroup("/Account").MapIdentityUserEndPoints();
+app.MapGroup("/Account").MapAuthorizationDemoEndpoints();
 app.MapAccountEndPoints();
 app.UseHttpsRedirection();
 

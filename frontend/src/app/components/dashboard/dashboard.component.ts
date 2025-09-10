@@ -3,14 +3,17 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../../shared/services/auth.service';
 import { UserService } from '../../shared/services/user.service';
-
+import { RouterLink } from '@angular/router';
+import { HideIfClaimsNotMetDirective } from '../../directives/hide-if-claims-not-met.directive';
+import { claimReq } from '../../shared/utils/claimReq';
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [RouterLink, HideIfClaimsNotMetDirective],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent implements OnInit {
+  claimReq = claimReq;
   fullName!: string;
   Email!: string;
   constructor(

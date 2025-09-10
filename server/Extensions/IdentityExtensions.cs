@@ -8,7 +8,9 @@ namespace server.Extensions
        
         public static IServiceCollection AddIdentityHandlerAndStores(this IServiceCollection _services)//Iservicecollections extension method
         {
-            _services.AddIdentityApiEndpoints<AppUser>().AddEntityFrameworkStores<AppDbContext>();//registering the identity 
+            _services.AddIdentityApiEndpoints<AppUser>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>();//registering the identity 
             return _services;
         }
         public static IServiceCollection ConfigureIdentityOptions(this IServiceCollection _services)//Iservicecollections extension method
